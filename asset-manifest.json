@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/editor-with-tags-usehooks/static/css/main.4ccc1c3c.chunk.css",
+    "main.css": "/editor-with-tags-usehooks/static/css/main.a58f1003.chunk.css",
     "main.js": "/editor-with-tags-usehooks/static/js/main.5205672c.chunk.js",
     "main.js.map": "/editor-with-tags-usehooks/static/js/main.5205672c.chunk.js.map",
     "runtime-main.js": "/editor-with-tags-usehooks/static/js/runtime-main.b4750413.js",
@@ -10,13 +10,13 @@
     "static/js/3.8748d691.chunk.js": "/editor-with-tags-usehooks/static/js/3.8748d691.chunk.js",
     "static/js/3.8748d691.chunk.js.map": "/editor-with-tags-usehooks/static/js/3.8748d691.chunk.js.map",
     "index.html": "/editor-with-tags-usehooks/index.html",
-    "static/css/main.4ccc1c3c.chunk.css.map": "/editor-with-tags-usehooks/static/css/main.4ccc1c3c.chunk.css.map",
+    "static/css/main.a58f1003.chunk.css.map": "/editor-with-tags-usehooks/static/css/main.a58f1003.chunk.css.map",
     "static/js/2.36acfa4d.chunk.js.LICENSE.txt": "/editor-with-tags-usehooks/static/js/2.36acfa4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b4750413.js",
     "static/js/2.36acfa4d.chunk.js",
-    "static/css/main.4ccc1c3c.chunk.css",
+    "static/css/main.a58f1003.chunk.css",
     "static/js/main.5205672c.chunk.js"
   ]
 }
