@@ -2,24 +2,25 @@ import React, {useState} from "react";
 import Post from "./Post";
 
 
-function Form () {
-const [state,setState] = useState({
-    value: "",
-    tag: "",
-    dats: [],
-    note: [],
-    currentTags: [],
-    json: null,
-    isActive: false,
-    currentData: {
-        text: "",
-        key: "",
-        editMode: false
-    }
-})
+function Form() {
+    const [state, setState] = useState({
+        value: "",
+        tag: "",
+        dats: [],
+        note: [],
+        currentTags: [],
+        json: null,
+        isActive: false,
+        currentData: {
+            text: "",
+            key: "",
+            editMode: false
+        }
+    })
 
     const noteChange = (e) => {
-        setState({...state,
+        setState({
+            ...state,
             tag: e.target.value
         });
     };
@@ -27,23 +28,26 @@ const [state,setState] = useState({
     const searchTag = (e) => {
         e.preventDefault();
         let dats = state.dats;
-        let indexOfStevie = dats.findIndex(item => item.text.toLowerCase().includes (state.tag) );
-         dats.unshift(dats[indexOfStevie]);
-          dats.splice(indexOfStevie + 1, 1);
-        setState({...state,
+        let indexOfStevie = dats.findIndex(item => item.text.toLowerCase().includes(state.tag));
+        dats.unshift(dats[indexOfStevie]);
+        dats.splice(indexOfStevie + 1, 1);
+        setState({
+            ...state,
             dats: dats,
             tag: ""
         });
     };
 
     const delHashtag = (delTag) => {
-        setState({...state,
+        setState({
+            ...state,
             note: state.note.filter((tag) => tag !== delTag)
         });
     };
 
     const handleChange = (e) => {
-        setState({...state,
+        setState({
+            ...state,
             value: e.target.value,
             currentData: {
                 text: e.target.value,
@@ -54,7 +58,7 @@ const [state,setState] = useState({
         });
     };
 
-   const tagCloud = (savedTags, currentTags) => {
+    const tagCloud = (savedTags, currentTags) => {
         return [...new Set([...savedTags, ...currentTags])];
     };
 
@@ -66,10 +70,11 @@ const [state,setState] = useState({
                 note: state.note
             };
             const newDats = [...state.dats, state.currentData];
-            setState({...state,
+            setState({
+                ...state,
                 json: JSON.stringify(myJson),
                 dats: newDats,
-                note:  tagCloud(state.note, state.currentTags),
+                note: tagCloud(state.note, state.currentTags),
                 currentTags: [],
                 value: ""
             });
@@ -78,7 +83,8 @@ const [state,setState] = useState({
 
     const delPost = (key) => {
         const filterTask = state.dats.filter((item) => item.key !== key);
-        setState({...state,
+        setState({
+            ...state,
             dats: filterTask
         });
     };
@@ -99,7 +105,8 @@ const [state,setState] = useState({
                 act = true;
             }
         }
-        setState({...state,
+        setState({
+            ...state,
             dats: dats,
             value: text,
             isActive: act
@@ -116,7 +123,8 @@ const [state,setState] = useState({
                         item.text = state.value;
                     }
                 });
-                setState({...state,
+                setState({
+                    ...state,
                     dats: dats,
                     value: "",
                     isActive: false
@@ -131,27 +139,26 @@ const [state,setState] = useState({
         }
     };
 
-
-        return (
-            <div>
-                <Post
-                    isActive={state.isActive}
-                    value={state.value}
-                    note= {tagCloud(state.note, state.currentTags)}
-                    tag={state.tag}
-                    dats={state.dats}
-                    handleKeyPress={handleKeyPress}
-                    handleChange={handleChange}
-                    delHashtag={delHashtag}
-                    delPost={delPost}
-                    activateEditMode={activateEditMode}
-                    deactivateEditMode={deactivateEditMode}
-                    handleSubmit={handleSubmit}
-                    searchTag={searchTag}
-                    noteChange={noteChange}
-                />
-            </div>
-        );
+    return (
+        <div>
+            <Post
+                isActive={state.isActive}
+                value={state.value}
+                note={tagCloud(state.note, state.currentTags)}
+                tag={state.tag}
+                dats={state.dats}
+                handleKeyPress={handleKeyPress}
+                handleChange={handleChange}
+                delHashtag={delHashtag}
+                delPost={delPost}
+                activateEditMode={activateEditMode}
+                deactivateEditMode={deactivateEditMode}
+                handleSubmit={handleSubmit}
+                searchTag={searchTag}
+                noteChange={noteChange}
+            />
+        </div>
+    );
 
 }
 

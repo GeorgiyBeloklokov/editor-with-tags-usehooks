@@ -1,6 +1,6 @@
 $background-head-inputs: transparent;
 /*$background-items: linear-gradient(90deg, rgba(115, 120, 202, 1) 50%, rgba(182, 134, 203, 1) 100%);*/
-$background-body: linear-gradient(90deg, rgba(78,128,255,1) 0%, rgba(247,40,221,1) 100%);
+$background-body: linear-gradient(90deg, rgba(78, 128, 255, 1) 0%, rgba(247, 40, 221, 1) 100%);
 $twenty: 20px;
 $shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 $marginLi: 5px 10px 0px 10px;
@@ -82,6 +82,34 @@ body {
   text-align: center;
 }
 
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+.todo-exit-active{
+  animation: fade-out 500ms forwards ;
+}
+.todo-enter-active{
+  animation: fade-in 500ms forwards;
+}
+
 .Post {
   .someText {
     @extend %form-props;
@@ -136,6 +164,7 @@ body {
     list-style-position: inside;
     list-style-type: upper-roman;
 
+
     .notes {
       @extend %li-props;
       margin: $twenty;
@@ -164,6 +193,7 @@ body {
         border-radius: 10px;
         @extend %hover-active-props;
       }
+
     }
 
     .containerNote {
@@ -197,6 +227,7 @@ body {
         @extend %hover-active-props;
       }
     }
+
   }
 
   @media only screen and (max-width: 700px) {
