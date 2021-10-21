@@ -2,7 +2,6 @@ import React from "react";
 
 const HashTag = (props) => {
     const note = props.note;
-
     const listTag = note.map((item) => {
         let className = " ";
         if (props.isActive) {

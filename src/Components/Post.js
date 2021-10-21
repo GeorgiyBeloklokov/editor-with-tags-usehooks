@@ -3,12 +3,10 @@ import Task from "./Task";
 import HashTag from "./HashTag";
 
 function Post(props) {
-
     return (
         <div className="Post">
             <form className="someText">
           <textarea
-
               value={props.value}
               onChange={props.handleChange}
               onKeyDown={props.handleKeyPress}
@@ -30,7 +28,6 @@ function Post(props) {
                 </button>
             </form>
             <div className="listBox">
-
                 <Task
                     value={props.value}
                     handleChange={props.handleChange}
@@ -51,7 +48,6 @@ function Post(props) {
             </div>
         </div>
     );
-
 }
 
 export default Post;

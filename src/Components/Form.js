@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Post from "./Post";
 
-
 function Form() {
     const [state, setState] = useState({
         value: "",
@@ -159,7 +158,6 @@ function Form() {
             />
         </div>
     );
-
 }
 
 export default Form;
