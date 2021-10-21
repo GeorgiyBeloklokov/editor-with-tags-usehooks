@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/editor-with-tags-usehooks/static/css/main.a58f1003.chunk.css",
-    "main.js": "/editor-with-tags-usehooks/static/js/main.5205672c.chunk.js",
-    "main.js.map": "/editor-with-tags-usehooks/static/js/main.5205672c.chunk.js.map",
-    "runtime-main.js": "/editor-with-tags-usehooks/static/js/runtime-main.b4750413.js",
-    "runtime-main.js.map": "/editor-with-tags-usehooks/static/js/runtime-main.b4750413.js.map",
-    "static/js/2.36acfa4d.chunk.js": "/editor-with-tags-usehooks/static/js/2.36acfa4d.chunk.js",
-    "static/js/2.36acfa4d.chunk.js.map": "/editor-with-tags-usehooks/static/js/2.36acfa4d.chunk.js.map",
-    "static/js/3.8748d691.chunk.js": "/editor-with-tags-usehooks/static/js/3.8748d691.chunk.js",
-    "static/js/3.8748d691.chunk.js.map": "/editor-with-tags-usehooks/static/js/3.8748d691.chunk.js.map",
+    "main.css": "/editor-with-tags-usehooks/static/css/main.18af94a0.chunk.css",
+    "main.js": "/editor-with-tags-usehooks/static/js/main.1f77ca9f.chunk.js",
+    "main.js.map": "/editor-with-tags-usehooks/static/js/main.1f77ca9f.chunk.js.map",
+    "runtime-main.js": "/editor-with-tags-usehooks/static/js/runtime-main.f50a2f47.js",
+    "runtime-main.js.map": "/editor-with-tags-usehooks/static/js/runtime-main.f50a2f47.js.map",
+    "static/js/2.97e1f092.chunk.js": "/editor-with-tags-usehooks/static/js/2.97e1f092.chunk.js",
+    "static/js/2.97e1f092.chunk.js.map": "/editor-with-tags-usehooks/static/js/2.97e1f092.chunk.js.map",
+    "static/js/3.319d4b89.chunk.js": "/editor-with-tags-usehooks/static/js/3.319d4b89.chunk.js",
+    "static/js/3.319d4b89.chunk.js.map": "/editor-with-tags-usehooks/static/js/3.319d4b89.chunk.js.map",
     "index.html": "/editor-with-tags-usehooks/index.html",
-    "static/css/main.a58f1003.chunk.css.map": "/editor-with-tags-usehooks/static/css/main.a58f1003.chunk.css.map",
-    "static/js/2.36acfa4d.chunk.js.LICENSE.txt": "/editor-with-tags-usehooks/static/js/2.36acfa4d.chunk.js.LICENSE.txt"
+    "static/css/main.18af94a0.chunk.css.map": "/editor-with-tags-usehooks/static/css/main.18af94a0.chunk.css.map",
+    "static/js/2.97e1f092.chunk.js.LICENSE.txt": "/editor-with-tags-usehooks/static/js/2.97e1f092.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b4750413.js",
-    "static/js/2.36acfa4d.chunk.js",
-    "static/css/main.a58f1003.chunk.css",
-    "static/js/main.5205672c.chunk.js"
+    "static/js/runtime-main.f50a2f47.js",
+    "static/js/2.97e1f092.chunk.js",
+    "static/css/main.18af94a0.chunk.css",
+    "static/js/main.1f77ca9f.chunk.js"
   ]
 }
